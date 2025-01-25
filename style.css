@@ -1,0 +1,501 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 100%;
+  box-sizing: border-box;
+  
+}
+
+
+img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+  
+}
+
+button {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 100%;
+}
+body {
+  background-color: rgb(130, 46, 17);
+
+}
+
+[class*="col-"] {
+  width: 100%;
+
+}
+
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+
+}
+
+button {
+  color: white;
+  background-color: rgb(5, 41, 5);
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+@media only screen and (max-width: 300px){
+  .nav-menu {display: none}
+}
+
+@media only screen and (min-width:768px) {
+  .col-1 {width: 8.33%}
+  .col-2 {width: 16.66%}
+  .col-3 {width: 25%}
+  .col-4 {width: 33.33%}
+  .col-5 {width: 41.66%}
+  .col-6 {width: 50%}
+  .col-7 {width: 58.33%}
+  .col-8 {width: 66.66%}
+  .col-9 {width: 75%}
+  .col-10 {width: 83.33%}
+  .col-11 {width: 91.66%}
+  .col-12 {width: 100%}
+    
+}
+
+.header{
+  position: fixed;
+  background-color: rgb(130, 46, 17);
+  top: 0;
+  left: 0;
+  right: 0;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom-color: rgb(155, 47, 14);
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  z-index: 9;
+  
+}
+
+.container {
+  margin-top: 60px;
+  color: white;
+}
+.logo {
+  max-width: 2vw;
+  font-weight: 700;
+  font-size: 2rem;
+  letter-spacing: 1vw;
+  flex: 1;
+}
+
+.nav-menu {
+  display: flex;
+  column-gap: 5vw;
+  align-items: center;
+  
+  
+
+  
+}
+
+.hero-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 25%;
+  align-items: center;
+  height: 100vh;
+  box-shadow: -10px 20px 5px rgb(68, 23, 9);
+  
+  
+
+
+  
+  
+
+}
+.welcome-msg {
+  display: grid;
+  row-gap: 20px;
+  align-items: center;
+  position: relative;
+  
+}
+
+.welcome-msg > h2 {
+  font-size: 100px;
+}
+.welcome-msg > p {
+  font-size: 12px;
+  
+  
+  
+  
+}
+
+h1 {
+  font-size: 80px;
+  line-height: 6rem;
+}
+
+.signature-dishes {
+  display: flex;
+  flex-direction: column;
+  padding: 0px;
+  position: absolute;
+  left: -1000px;
+  
+  z-index: -1;
+
+  
+  
+  
+  
+  
+}
+
+.signature-dishes > p {
+  animation-name: message;
+  animation-duration: 1s;
+  animation-delay: 500ms;
+  animation-fill-mode: forwards;
+}
+
+@keyframes message {
+  from {
+    margin-left: -10em;
+  }
+
+  to {
+    margin-left: 150em;
+    
+  }
+}
+
+.dish-slide {
+  display: flex;
+  align-items: center;
+  font-size: 40em;
+  animation-name: sliding;
+  animation-duration: 5s;
+  animation-delay: 2s;
+  animation-fill-mode: forwards;
+  
+  
+  
+  
+  
+}
+
+@keyframes sliding {
+  from {
+    margin-left: -10em;
+  }
+
+  to {
+    margin-left: 3em;
+    
+  }
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.west-african {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  column-gap: 10px;
+  align-items: center;
+  
+}
+
+.east-african {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  column-gap: 10px;
+  align-items: center;
+  
+}
+
+.south-african {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  column-gap: 10px;
+  align-items: center;
+  
+}
+
+.central-african {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  column-gap: 10px;
+  align-items: center;
+  
+}
+
+.north-african {
+  display: grid;
+  column-gap: 10px;
+  align-items: center;
+  
+}
+
+.jollof-debate {
+  
+  display: grid;
+  
+  column-gap: 10px;
+  align-items: center;
+  
+  
+}
+
+.drinks {
+
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  column-gap: 10px;
+  align-items: center;
+  
+}
+
+.jollof-debate-txt {
+  background-color: black;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.typing-txt {
+  display: grid;
+}
+
+.jollof-debate-img {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.turning-circle {
+  width: 100%;
+  height: 100%;
+  align-self: center;
+  justify-self: center;
+  border-radius: 100%;
+  background-color: aqua;
+  position: relative;
+}
+
+.first-plate {
+  position: absolute;
+  top: 0;
+  width: 40%;
+  height: 40%;
+  border-radius: 200%;
+}
+
+.second-plate {
+  position: absolute;
+  top: 0;
+  width: 40%;
+  height: 40%;
+  border-radius: 200%;
+}
+
+.third-plate {
+  position: absolute;
+  top: 0;
+  width: 40%;
+  height: 40%;
+  border-radius: 200%;
+}
+.fourth-plate {
+  position: absolute;
+  top: 0;
+  width: 40%;
+  height: 40%;
+  border-radius: 200%;
+}
+
+.scenery-grid {
+  display: grid;
+  
+}
+
+.scenery-images {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  justify-items: center;
+}
+
+.scenery-grid > p {
+  align-self: center;
+  justify-self: center;
+  font-size: 5rem;
+  font-weight: 500;
+}
+.scenery-images > img {
+  height: 70%;
+  width: 70%;;
+  box-shadow: 10px 10px 10px black;
+  
+}
+/**
+.dish-slide > .img-1 {
+  
+}
+
+.dish-slide > .img-2 {
+  animation-name: sliding1;
+  animation-duration: 5s;
+  animation-delay: 2s;
+  animation-fill-mode: forwards;
+}
+.dish-slide > .img-3 {
+  animation-name: sliding2;
+  animation-duration: 5s;
+  animation-delay: 2s;
+  animation-fill-mode: forwards;
+}
+
+
+
+
+
+@keyframes sliding1 {
+  from {
+    margin-left: -10em;
+  }
+
+  to {
+    
+    margin-left: ;
+  }
+}
+
+@keyframes sliding2 {
+  from {
+    margin-left: -10em;
+  }
+
+  to {
+    margin-left: ;
+    
+  }
+}
+
+
+
+/**
+  background-color: rgb(130, 46, 17);
+  font-family: "Space Grotesk", serif;
+  padding: 0;
+  margin: 0;
+  left: 10px;
+  font-optical-sizing: auto;
+  font-style: normal;
+  
+  
+
+  
+}
+
+.header {
+  background: none;
+  border-bottom-style: solid;
+  border-right-style: solid;
+  padding-bottom: 5px;
+  border-width: 1px;
+  color: rgb(255, 255, 255);
+  font-size: 30px;
+  margin-top: 10px;
+  align-items: center;
+  display: flex;
+  position: fixed;
+  left: 10px;
+  right: 10px;
+  justify-content: space-between;
+  
+  
+}
+
+.logo {
+  background: none;
+}
+
+.nav-menu {
+  font-size: 15px;
+  display: flex;
+  column-gap: 50px;
+  min-width: 300px;
+  align-items: center;
+  
+  
+  
+}
+
+button {
+  padding: 0px 2px;
+  height: 30px;
+  background-color: rgb(48, 89, 50);
+  color: white;
+  border-style: none;
+  border-radius: 5px;
+  font-family: "Space Grotesk";
+  font-size: 10px;
+  
+
+}
+
+
+
+.hero-section {
+  
+  display: grid;
+  position: relative;
+  top: 100px;
+  width: 50%;
+  min-width: 500px;
+  background-color: none;
+ 
+
+}
+
+h1 {
+  background: none;
+  color: white;
+  font-size: 500%;
+  z-index: 3;
+  
+
+}
+
+
+
+
+
+
+.first {
+  
+  height: 500vh;
+  width: 500vh;
+  margin-top: -50vh;
+  margin-left: -120vw;
+  border-radius: 400vw;
+  filter: blur(100px);
+  background-color: rgb(204, 90, 46);
+  z-index: 1;
+  
+  
+  
+} **/
+
+
+
